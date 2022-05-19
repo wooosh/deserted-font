@@ -7,10 +7,10 @@ WIDTH=normal
 
 # glyph set image layout info
 WIDTH_PX=8
-HEIGHT_PX=13
+HEIGHT_PX=16
 
-ASCENT=11
-DESCENT=2
+ASCENT=13
+DESCENT=3
 
 # list of glyph sets to import, in ascending precedence
 register_glyphset space ' '
