@@ -1,0 +1,10 @@
+g++ png2bdf.cpp -o png2bdf
+./png2bdf space.png 7 1 " " > space.chars
+./png2bdf serif.png 7 1 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz > serif.chars
+./png2bdf symbols.png 7 1 '!"#$%&'"'"'()*+,-./:;<=>?@[\]^_`{|}~' > symbols.chars
+
+cat space.chars serif.chars symbols.chars > font.body
+cat font.hdr > font.bdf
+echo "CHARS $(grep STARTCHAR font.body | wc -l)" >> font.bdf
+cat font.body >> font.bdf
+echo "ENDFONT" >> font.bdf
