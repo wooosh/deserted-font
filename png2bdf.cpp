@@ -16,7 +16,6 @@ int main(int argc, char **argv) {
   int charwidth = std::stoi(argv[2]);
   std::string chars = argv[3];
 
-
   int img_w, img_h, num_channels;
   uint32_t *img = (uint32_t *) stbi_load(filename, &img_w, &img_h, &num_channels, 4);
   if (img == NULL) {
