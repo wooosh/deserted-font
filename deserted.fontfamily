@@ -1,0 +1,20 @@
+# font metadata
+FOUNDRY=wooosh
+FAMILY=deserted
+WEIGHT=normal
+SLANT=normal
+WIDTH=normal
+
+# glyph set image layout info
+WIDTH_PX=8
+HEIGHT_PX=13
+
+ASCENT=11
+DESCENT=2
+
+# list of glyph sets to import, in ascending precedence
+register_glyphset space ' '
+register_glyphset symbols '!"#$%&'"'"'()*+,-./:;<=>?@[\]^_`{|}~'
+register_glyphset serif 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+GLYPH_SETS="space symbols serif" build_variant serif
