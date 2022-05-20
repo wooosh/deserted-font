@@ -27,7 +27,7 @@ x_font_desc_weight() {
 write_bdf_header() {
   write "FONT -$FOUNDRY-$FAMILY-$(x_font_desc_weight $WEIGHT)-$(x_font_desc_slant $SLANT)-$WIDTH--$HEIGHT_PX-${HEIGHT_PX}0-75-75-m-${WIDTH_PX}0-iso10646-1"
   write "SIZE $BBOX_HEIGHT 75 75"
-  write "FONTBOUNDINGBOX $BBOX_WIDTH $BBOX_HEIGHT 0 -$DESCENT"
+  write "FONTBOUNDINGBOX $WIDTH_PX $HEIGHT_PX 0 -$DESCENT"
   write "STARTPROPERTIES 18"
   write "FONT_ASCENT $ASCENT"
   write "FONT_DESCENT $DESCENT"
