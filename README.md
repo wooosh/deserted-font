@@ -1,6 +1,9 @@
-wip collection of bitmap fonts, based on 80s and 90s japanese fonts
+<p align=center>
+  <img src='sample.png' />
+</p>
 
-building instructions
+```
+building instructions:
 
 1. ensure g++ or clang++ and make are installed
 2. make
@@ -9,3 +12,4 @@ building instructions
 5. fc-cache -fv
 
 the font name used by fontconfig is "deserted" (which may or may not be case sensitive)
+```
