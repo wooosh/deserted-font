@@ -16,5 +16,6 @@ DESCENT=3
 register_glyphset space ' '
 register_glyphset symbols '!"#$%&'"'"'()*+,-./:;<=>?@[\]^_`{|}~'
 register_glyphset serif 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+register_glyphset logic "≡→⇒⇔¬∨∧⊥⊤∀∃⊢⊨⊂⊆⊃↔■↑↓∴∵†⊼⊽◇◻"
 
-GLYPH_SETS="space symbols serif" build_variant serif
+GLYPH_SETS="space symbols serif logic" build_variant serif
