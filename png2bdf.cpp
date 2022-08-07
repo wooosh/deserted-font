@@ -1,6 +1,7 @@
 #include <ios>
 #include <iostream>
 #include <iomanip>
+#include <codecvt>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -14,7 +15,9 @@ int main(int argc, char **argv) {
 
   const char *filename = argv[1];
   int charwidth = std::stoi(argv[2]);
-  std::string chars = argv[3];
+  std::string chars_narrow = argv[3];
+  std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> utf8conv;
+  std::wstring chars = utf8conv.from_bytes(chars_narrow);
 
   int img_w, img_h, num_channels;
   uint32_t *img = (uint32_t *) stbi_load(filename, &img_w, &img_h, &num_channels, 4);
