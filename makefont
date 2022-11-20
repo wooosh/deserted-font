@@ -58,6 +58,7 @@ write_bdf_header() {
 }
 
 build_variant() {
+  FAMILY="$1"
   FILE="build/$FAMILY-$WEIGHT-$SLANT-$WIDTH-${WIDTH_PX}x${HEIGHT_PX}.bdf"
   echo "STARTFONT 2.1" >"$FILE"
   write_bdf_header
